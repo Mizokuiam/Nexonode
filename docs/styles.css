@@ -625,15 +625,16 @@ main {
 
 /* Integrations Section */
 .integrations {
-    padding: 80px 20px;
+    padding: 100px 20px;
     text-align: center;
-    background: transparent;
 }
 
 .integrations h2 {
     margin-bottom: 60px;
     font-size: 2.5em;
-    color: #E2E8F0;
+    background: linear-gradient(45deg, #4F46E5, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .integration-grid {
@@ -648,26 +649,18 @@ main {
 
 .integration-logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 15px;
-}
-
-.integration-logo img {
-    height: 40px;
-    object-fit: contain;
-    opacity: 0.7;
     transition: opacity 0.3s ease;
 }
 
-.integration-logo:hover img {
-    opacity: 1;
+.integration-logo:hover {
+    opacity: 0.8;
 }
 
-.integration-logo span {
-    color: #94A3B8;
-    font-size: 0.9em;
-    font-weight: 500;
+.integration-logo img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
 }
 
 @media (max-width: 768px) {
@@ -676,7 +669,7 @@ main {
     }
 
     .integration-logo img {
-        height: 35px;
+        height: 30px;
     }
 }
 
