@@ -38,41 +38,113 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="editor-frame">
-                    <div class="editor-titlebar">
-                        <div class="editor-dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                <div class="editor-grid">
+                    <!-- First Editor -->
+                    <div class="editor-frame">
+                        <div class="editor-titlebar">
+                            <div class="editor-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="editor-title">app.js</div>
                         </div>
-                        <div class="editor-title">main.js</div>
+                        <div class="editor-content">
+                            <div class="line-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">const</span> express = <span class="function">require</span>(<span class="string">'express'</span>);</div>
+                                <div class="code-line"><span class="keyword">const</span> app = <span class="function">express</span>();</div>
+                                <div class="code-line indent">app.<span class="function">use</span>(<span class="string">'/api'</span>, router);</div>
+                                <div class="code-line indent">app.<span class="function">listen</span>(3000);</div>
+                                <div class="code-line cursor"></div>
+                            </div>
+                        </div>
+                        <div class="suggestion-box">
+                            <div class="suggestion-icon">💡</div>
+                            <div class="suggestion-content">
+                                <div class="suggestion-title">AI Suggestion</div>
+                                <div class="suggestion-text">Add middleware for request logging</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="editor-content">
-                        <div class="line-numbers">
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
+
+                    <!-- Second Editor -->
+                    <div class="editor-frame">
+                        <div class="editor-titlebar">
+                            <div class="editor-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="editor-title">main.js</div>
                         </div>
-                        <div class="code-content">
-                            <div class="code-line"><span class="keyword">async</span> <span class="function">function</span> <span class="function-name">generateCode</span>() {</div>
-                            <div class="code-line indent">const response = <span class="keyword">await</span> ai.suggest();</div>
-                            <div class="code-line indent"><span class="keyword">return</span> response.code;</div>
-                            <div class="code-line">}</div>
-                            <div class="code-line cursor"></div>
+                        <div class="editor-content">
+                            <div class="line-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">async</span> <span class="function">function</span> <span class="function-name">generateCode</span>() {</div>
+                                <div class="code-line indent"><span class="keyword">const</span> response = <span class="keyword">await</span> ai.suggest();</div>
+                                <div class="code-line indent"><span class="keyword">return</span> response.code;</div>
+                                <div class="code-line">}</div>
+                                <div class="code-line cursor"></div>
+                            </div>
+                        </div>
+                        <div class="suggestion-box">
+                            <div class="suggestion-icon">💡</div>
+                            <div class="suggestion-content">
+                                <div class="suggestion-title">AI Suggestion</div>
+                                <div class="suggestion-text">Add error handling and input validation</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="suggestion-box">
-                        <div class="suggestion-icon">💡</div>
-                        <div class="suggestion-content">
-                            <div class="suggestion-title">AI Suggestion</div>
-                            <div class="suggestion-text">Add error handling and input validation</div>
+
+                    <!-- Third Editor -->
+                    <div class="editor-frame">
+                        <div class="editor-titlebar">
+                            <div class="editor-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="editor-title">user.service.js</div>
+                        </div>
+                        <div class="editor-content">
+                            <div class="line-numbers">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">class</span> <span class="function-name">UserService</span> {</div>
+                                <div class="code-line indent"><span class="keyword">async</span> <span class="function">createUser</span>(data) {</div>
+                                <div class="code-line indent indent"><span class="keyword">return</span> <span class="keyword">new</span> User(data);</div>
+                                <div class="code-line indent">}</div>
+                                <div class="code-line">}</div>
+                            </div>
+                        </div>
+                        <div class="suggestion-box">
+                            <div class="suggestion-icon">💡</div>
+                            <div class="suggestion-content">
+                                <div class="suggestion-title">AI Suggestion</div>
+                                <div class="suggestion-text">Add data validation before creation</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         <section id="features" class="features">
             <h2>Premium Features</h2>
