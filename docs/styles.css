@@ -109,7 +109,94 @@ main {
 }
 
 .hero {
-    padding-top: 4rem;
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #4F46E5, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #94A3B8;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.demo-container {
+    background: rgba(17, 24, 39, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.demo-animation {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.cta-button.primary {
+    background: linear-gradient(45deg, #4F46E5, #7C3AED);
+    color: white;
+    border: none;
+}
+
+.cta-button.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.cta-button.primary:hover {
+    background: linear-gradient(45deg, #7C3AED, #4F46E5);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
+
+.cta-button.secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Button in Nav */
@@ -131,47 +218,6 @@ main {
 }
 
 /* Hero Section */
-.hero {
-    max-width: 1200px;
-    margin: 6rem auto;
-    padding: 0 2rem;
-    text-align: center;
-    position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at center, rgba(0,102,204,0.15) 0%, transparent 70%);
-    z-index: -1;
-}
-
-.hero h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(to right, #fff, rgba(255,255,255,0.8));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-.hero p {
-    font-size: 1.25rem;
-    color: rgba(255,255,255,0.7);
-    margin-bottom: 2.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .hero-image {
     margin-top: 4rem;
     border-radius: var(--border-radius);
@@ -200,63 +246,6 @@ main {
     width: 100%;
     height: auto;
     border-radius: calc(var(--border-radius) - 4px);
-}
-
-/* Buttons */
-.cta-button, .primary-button, .secondary-button {
-    display: inline-block;
-    padding: 0.9rem 1.8rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-    background: var(--gradient-1);
-    animation: glow 3s infinite;
-}
-
-.cta-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        120deg,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
-    transition: 0.5s;
-}
-
-.cta-button:hover::before {
-    left: 100%;
-}
-
-.cta-button, .primary-button {
-    background: white;
-    color: var(--dark-background);
-}
-
-.secondary-button {
-    background: rgba(255,255,255,0.1);
-    color: white;
-    margin-left: 1rem;
-    backdrop-filter: blur(8px);
-}
-
-.cta-button:hover, .primary-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0,102,204,0.2);
-}
-
-.secondary-button:hover {
-    background: rgba(255,255,255,0.15);
-    transform: translateY(-2px);
 }
 
 /* Features Section */
