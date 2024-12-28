@@ -7,6 +7,7 @@
     --text-color: #1a1a1a;
     --light-text: #666;
     --background: #000212;
+    --nav-background: #010314;
     --light-background: #f8f9fa;
     --dark-background: #000212;
     --border-radius: 8px;
@@ -28,35 +29,23 @@ body {
 
 /* Header & Navigation */
 .header {
-    background: transparent;
-    padding: 1rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.header::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at top right, rgba(0, 242, 254, 0.15), transparent 60%),
-                radial-gradient(circle at bottom left, rgba(0, 102, 204, 0.1), transparent 60%);
-    z-index: -1;
+    background: var(--nav-background);
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .nav {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    background: transparent;
 }
 
 .logo {
@@ -66,49 +55,79 @@ body {
 }
 
 .logo img {
-    height: 32px;
+    height: 28px;
     width: auto;
 }
 
 .logo span {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: white;
     letter-spacing: -0.5px;
 }
 
 .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.7);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: var(--transition);
     position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: white;
 }
 
 .nav-links a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -4px;
+    height: 1px;
+    bottom: 0;
     left: 0;
     background: var(--gradient-1);
     transition: var(--transition);
+    opacity: 0;
 }
 
 .nav-links a:hover::after {
     width: 100%;
+    opacity: 1;
 }
 
-.nav-links a:hover {
+/* Main Content Adjustment */
+main {
+    margin-top: 80px; /* Adjust based on header height */
+}
+
+.hero {
+    padding-top: 4rem;
+}
+
+/* Button in Nav */
+.nav-button {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.1);
     color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-button:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateY(-1px);
 }
 
 /* Hero Section */
