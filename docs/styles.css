@@ -625,48 +625,66 @@ main {
 
 /* Integrations Section */
 .integrations {
-    padding: 8rem 2rem;
-    background: linear-gradient(to bottom, transparent, rgba(0,102,204,0.1), transparent);
+    padding: 80px 0;
+    text-align: center;
+    background: #0F172A;
 }
 
 .integrations h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-    font-size: 3rem;
-    color: white;
-    letter-spacing: -0.5px;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    background: linear-gradient(45deg, #4F46E5, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.integration-logos {
-    max-width: 1000px;
-    margin: 0 auto;
+.logo-scroll {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    background: linear-gradient(90deg, 
+        #0F172A 0%, 
+        rgba(15, 23, 42, 0) 5%, 
+        rgba(15, 23, 42, 0) 95%, 
+        #0F172A 100%
+    );
+}
+
+.logo-container {
     display: flex;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
+    animation: scroll 30s linear infinite;
+}
+
+.logo-group {
+    display: flex;
+    gap: 60px;
+    padding: 0 30px;
 }
 
 .integration-logo {
-    text-align: center;
-    transition: var(--transition);
-}
-
-.integration-logo img {
-    height: 80px;
-    margin-bottom: 1rem;
-    transition: var(--transition);
+    height: 40px;
+    object-fit: contain;
     filter: grayscale(100%) brightness(0.8);
+    transition: filter 0.3s ease;
 }
 
-.integration-logo:hover img {
-    filter: none;
-    transform: translateY(-5px) scale(1.05);
+.integration-logo:hover {
+    filter: grayscale(0%) brightness(1);
 }
 
-.integration-logo span {
-    display: block;
-    color: rgba(255,255,255,0.7);
-    font-size: 1rem;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Add hover pause */
+.logo-container:hover {
+    animation-play-state: paused;
 }
 
 /* FAQ Section */
