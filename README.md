@@ -8,23 +8,19 @@ Nexonode is your AI-powered coding companion that enhances your development work
 
 ## Features
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Mizokuiam/Nexonode/main/docs/assets/code-generation.png" alt="Code Generation Demo" width="800"/>
-</div>
-
 ### 🤖 AI-Powered Code Generation
 - Smart code suggestions
 - Context-aware completions
 - Automated refactoring
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Mizokuiam/Nexonode/main/docs/assets/pair-programming.png" alt="Pair Programming Demo" width="800"/>
-</div>
+![Code Generation Demo](docs/assets/code-generation.png)
 
 ### 👥 AI Pair Programming
 - Interactive coding assistance
 - Real-time suggestions
 - Code explanations
+
+![Pair Programming Demo](docs/assets/pair-programming.png)
 
 ### ⚡ Command Automation
 - Quick command execution
