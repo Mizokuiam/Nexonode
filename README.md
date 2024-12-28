@@ -1,129 +1,67 @@
-# Nexonode - Interactive Automation Assistant
+# Nexonode - AI-Powered Coding Assistant
 
-A powerful VS Code extension that streamlines your development workflow through intelligent automation and context-aware command execution.
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mizokuiam.nexonode)](https://marketplace.visualstudio.com/items?itemName=mizokuiam.nexonode)
+[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/mizokuiam.nexonode)](https://marketplace.visualstudio.com/items?itemName=mizokuiam.nexonode)
+[![GitHub stars](https://img.shields.io/github/stars/Mizokuiam/Nexonode?style=social)](https://github.com/Mizokuiam/Nexonode)
+[![Discord](https://img.shields.io/discord/1234567890?style=social)](https://discord.gg/8DW735Hn)
+
+Nexonode is your AI-powered coding companion that enhances your development workflow with intelligent automation and code generation.
 
 ## Features
 
-### 🎯 Smart Command Execution
-- Context-aware command validation
-- Automatic command suggestions based on current context
-- Risk assessment and safety checks
-- Command history tracking
+![Code Generation Demo](docs/assets/code-generation-demo.gif)
 
-### ⚡ Quick Access
-- Quick command palette (Ctrl+Shift+;)
-- Status bar integration with real-time feedback
-- Context menu integration
-- Keyboard shortcuts for common operations
+### 🤖 AI-Powered Code Generation
+- Smart code suggestions
+- Context-aware completions
+- Automated refactoring
 
-### 🔧 Supported Commands
-- **Format**: Intelligent code formatting
-- **Lint**: Code linting with ESLint integration
-- **Refactor**: Smart refactoring operations
-  - Extract method/variable
-  - Rename symbols
-  - Move code
-- **Git**: Common git operations
-  - Commit
-  - Push/Pull
-  - Branch management
-- **Test**: Automatic test framework detection
-- **Install**: Package management
-- **Search**: Advanced codebase search
-- **Snippets**: Context-aware code snippets
+![Pair Programming Demo](docs/assets/pair-programming-demo.gif)
 
-### 🔌 External Integrations
-- GitHub: Issue and PR management
-- Slack: Command notifications
-- Jira: Issue tracking
-- Jenkins: Build integration
+### 👥 AI Pair Programming
+- Interactive coding assistance
+- Real-time suggestions
+- Code explanations
 
-## Requirements
+![Command Automation Demo](docs/assets/command-demo.gif)
 
-- VS Code ^1.60.0
-- Node.js & npm (for development)
+### ⚡ Command Automation
+- Quick command execution
+- Custom automation scripts
+- Task automation
 
 ## Installation
 
 1. Open VS Code
-2. Press `Ctrl+P` to open the Quick Open dialog
-3. Type `ext install nexonode` and press Enter
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Nexonode"
+4. Click Install
 
-## Usage
+## Pricing
 
-### Quick Start
-1. Open the command palette (Ctrl+Shift+P)
-2. Type "Nexonode" to see available commands
-3. Or use the quick command palette (Ctrl+Shift+;)
+- **Community Edition**: Free
+  - Basic AI assistance
+  - Code completion
+  - Syntax highlighting
+  - Community support
 
-### Configuration
-1. Open VS Code settings
-2. Search for "Nexonode"
-3. Configure:
-   - Auto-approved commands
-   - Commands requiring approval
-   - Blocked commands
-   - External integration settings
-
-### Command Examples
-```bash
-# Format current file
-format
-
-# Lint project
-lint
-
-# Refactor operations
-refactor rename
-refactor extract method
-refactor move
-
-# Git operations
-git commit
-git push
-git pull
-
-# Run tests
-test
-
-# Install packages
-install package-name
-```
-
-## Extension Settings
-
-This extension contributes the following settings:
-
-* `nexonode.autoApprove`: Commands to execute without confirmation
-* `nexonode.requireApproval`: Commands requiring explicit approval
-* `nexonode.blocked`: Blocked commands
-* `nexonode.integrations`: External integration settings
-
-## Known Issues
-
-See our [GitHub issues](https://github.com/yourusername/nexonode/issues) for any known issues.
-
-## Release Notes
-
-### 0.1.0
-Initial release of Nexonode with core functionality:
-- Command execution system
-- Context analysis
-- Quick command palette
-- External integrations
-- Status bar integration
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
+- **Premium Edition**: $9.99
+  - Advanced AI features
+  - Premium code generation
+  - Custom snippets
+  - Priority support
+  - Team collaboration
 
 ## Support
 
-For support, please open an issue on our GitHub repository.
+- [Documentation](https://github.com/Mizokuiam/Nexonode/wiki)
+- [GitHub Issues](https://github.com/Mizokuiam/Nexonode/issues)
+- [Discord Community](https://discord.gg/8DW735Hn)
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## License
+
+[MIT License](LICENSE)

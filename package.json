@@ -4,6 +4,7 @@
   "description": "Interactive Automation Assistant for Code Editors with Premium AI Integration",
   "version": "0.1.0",
   "publisher": "mizokuiam",
+  "pricing": "Trial",
   "author": {
     "name": "Nexonode"
   },
@@ -11,6 +12,10 @@
     "type": "git",
     "url": "https://github.com/Mizokuiam/Nexonode"
   },
+  "bugs": {
+    "url": "https://github.com/Mizokuiam/Nexonode/issues"
+  },
+  "homepage": "https://mizokuiam.github.io/Nexonode/",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -32,6 +37,18 @@
     "color": "#000212",
     "theme": "dark"
   },
+  "badges": [
+    {
+      "url": "https://img.shields.io/github/stars/Mizokuiam/Nexonode?style=social",
+      "href": "https://github.com/Mizokuiam/Nexonode",
+      "description": "Star on GitHub"
+    },
+    {
+      "url": "https://img.shields.io/discord/1234567890?style=social",
+      "href": "https://discord.gg/8DW735Hn",
+      "description": "Join Discord"
+    }
+  ],
   "activationEvents": [
     "onCommand:nexonode.executeCommand",
     "onCommand:nexonode.validateContext",
