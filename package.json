@@ -1,0 +1,131 @@
+{
+  "name": "nexonode",
+  "displayName": "Nexonode",
+  "description": "Interactive Automation Assistant for Code Editors with Premium AI Integration",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other",
+    "Programming Languages",
+    "Machine Learning",
+    "Snippets"
+  ],
+  "activationEvents": [
+    "onCommand:nexonode.executeCommand",
+    "onCommand:nexonode.validateContext",
+    "onCommand:nexonode.configureRules",
+    "onCommand:nexonode.showQuickCommands",
+    "onCommand:nexonode.activatePremium",
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nexonode.executeCommand",
+        "title": "Nexonode: Execute Command"
+      },
+      {
+        "command": "nexonode.validateContext",
+        "title": "Nexonode: Validate Context"
+      },
+      {
+        "command": "nexonode.configureRules",
+        "title": "Nexonode: Configure Rules"
+      },
+      {
+        "command": "nexonode.showQuickCommands",
+        "title": "Nexonode: Show Quick Commands"
+      },
+      {
+        "command": "nexonode.activatePremium",
+        "title": "Nexonode: Activate Premium License"
+      }
+    ],
+    "configuration": {
+      "title": "Nexonode",
+      "properties": {
+        "nexonode.autoApprove": {
+          "type": "array",
+          "default": [
+            "format",
+            "lint"
+          ],
+          "description": "Commands that will be executed without confirmation"
+        },
+        "nexonode.requireApproval": {
+          "type": "array",
+          "default": [
+            "delete",
+            "refactor"
+          ],
+          "description": "Commands that require explicit approval"
+        },
+        "nexonode.blocked": {
+          "type": "array",
+          "default": [
+            "rm -rf",
+            "sudo"
+          ],
+          "description": "Commands that are blocked from execution"
+        },
+        "nexonode.integrations": {
+          "type": "object",
+          "default": {
+            "enabled": [
+              "github",
+              "slack"
+            ],
+            "webhookUrls": {}
+          },
+          "description": "External integration settings"
+        },
+        "nexonode.premium": {
+          "type": "object",
+          "default": {
+            "enabled": false,
+            "licenseKey": "",
+            "autoResponse": true,
+            "aiEditors": {
+              "windsurf": true,
+              "bolt": true,
+              "lovable": true
+            }
+          },
+          "description": "Premium features configuration"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "nexonode.showQuickCommands",
+        "key": "ctrl+shift+;",
+        "mac": "cmd+shift+;",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/node": "^16.x",
+    "eslint": "^8.x",
+    "typescript": "^4.x"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
