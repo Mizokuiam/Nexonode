@@ -1,29 +1,24 @@
 # Nexonode - AI-Powered Coding Assistant
 
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mizokuiam.nexonode)](https://marketplace.visualstudio.com/items?itemName=mizokuiam.nexonode)
-[![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/mizokuiam.nexonode)](https://marketplace.visualstudio.com/items?itemName=mizokuiam.nexonode)
-[![GitHub stars](https://img.shields.io/github/stars/Mizokuiam/Nexonode?style=social)](https://github.com/Mizokuiam/Nexonode)
-[![Discord](https://img.shields.io/discord/1234567890?style=social)](https://discord.gg/8DW735Hn)
 
 Nexonode is your AI-powered coding companion that enhances your development workflow with intelligent automation and code generation.
 
 ## Features
 
-![Code Generation Demo](docs/assets/code-generation-demo.gif)
+<img src="docs/assets/code-generation-demo.svg" alt="Code Generation Demo" width="800"/>
 
 ### 🤖 AI-Powered Code Generation
 - Smart code suggestions
 - Context-aware completions
 - Automated refactoring
 
-![Pair Programming Demo](docs/assets/pair-programming-demo.gif)
+<img src="docs/assets/pair-programming-demo.svg" alt="Pair Programming Demo" width="800"/>
 
 ### 👥 AI Pair Programming
 - Interactive coding assistance
 - Real-time suggestions
 - Code explanations
-
-![Command Automation Demo](docs/assets/command-demo.gif)
 
 ### ⚡ Command Automation
 - Quick command execution
@@ -56,7 +51,6 @@ Nexonode is your AI-powered coding companion that enhances your development work
 
 - [Documentation](https://github.com/Mizokuiam/Nexonode/wiki)
 - [GitHub Issues](https://github.com/Mizokuiam/Nexonode/issues)
-- [Discord Community](https://discord.gg/8DW735Hn)
 
 ## Contributing
 
