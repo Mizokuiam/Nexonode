@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="400" rx="12" fill="#1E1E1E"/>
+    <rect x="40" y="40" width="720" height="320" rx="8" fill="#252526"/>
+    <rect x="60" y="60" width="340" height="280" rx="4" fill="#2D2D2D"/>
+    <rect x="420" y="60" width="320" height="280" rx="4" fill="#2D2D2D"/>
+    
+    <!-- Code Lines -->
+    <rect x="80" y="80" width="200" height="12" rx="2" fill="#569CD6" fill-opacity="0.6"/>
+    <rect x="80" y="100" width="280" height="12" rx="2" fill="#4EC9B0" fill-opacity="0.6"/>
+    <rect x="80" y="120" width="240" height="12" rx="2" fill="#9CDCFE" fill-opacity="0.6"/>
+    <rect x="80" y="160" width="260" height="12" rx="2" fill="#CE9178" fill-opacity="0.6"/>
+    <rect x="80" y="180" width="220" height="12" rx="2" fill="#569CD6" fill-opacity="0.6"/>
+    <rect x="80" y="200" width="300" height="12" rx="2" fill="#4EC9B0" fill-opacity="0.6"/>
+    
+    <!-- AI Suggestions -->
+    <rect x="440" y="80" width="280" height="60" rx="4" fill="#1E1E1E"/>
+    <rect x="440" y="160" width="280" height="60" rx="4" fill="#1E1E1E"/>
+    <rect x="440" y="240" width="280" height="60" rx="4" fill="#1E1E1E"/>
+    
+    <!-- Suggestion Icons -->
+    <circle cx="460" cy="110" r="10" fill="#0066CC"/>
+    <circle cx="460" cy="190" r="10" fill="#FF6B6B"/>
+    <circle cx="460" cy="270" r="10" fill="#6C63FF"/>
+</svg>

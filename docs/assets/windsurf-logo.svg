@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="120" height="120" rx="24" fill="#0066CC"/>
-    <path d="M40 30L60 90L80 30M40 30H80M40 30L30 60M80 30L90 60" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="60" cy="60" r="10" fill="#FF6B6B"/>
+    <path d="M30 90L60 30L90 90H30Z" fill="white"/>
+    <path d="M45 75C45 75 52 65 60 65C68 65 75 75 75 75" stroke="white" stroke-width="4"/>
 </svg>
