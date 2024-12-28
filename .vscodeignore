@@ -7,3 +7,50 @@ vsc-extension-quickstart.md
 **/jsconfig.json
 **/*.map
 **/.eslintrc.json
+
+# Development files
+.github/**
+.git/**
+.editorconfig
+.prettierrc
+.prettierignore
+tsconfig.json
+webpack.config.js
+.npmrc
+.npmignore
+.travis.yml
+.gitlab-ci.yml
+.env*
+
+# Source files (since we're bundling)
+src/**
+!src/extension.js
+
+# Documentation and assets not needed in the extension
+docs/**
+!docs/assets/*.png
+!docs/assets/*.gif
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Build outputs
+out/**
+dist/**
+coverage/**
+*.vsix
+
+# Dependencies
+node_modules/**
+!node_modules/vscode-jsonrpc/**
+!node_modules/vscode-languageserver-protocol/**
+!node_modules/vscode-languageserver-types/**
+!node_modules/vscode-languageclient/**
+
+# Misc
+**/*.ts
+**/*.map
+**/*.log
+.DS_Store
+Thumbs.db
