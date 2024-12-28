@@ -140,8 +140,8 @@ main {
 }
 
 .editor-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -149,21 +149,47 @@ main {
 }
 
 .editor-frame {
+    flex: 1;
     background: #1E1E1E;
     border-radius: 12px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease;
 }
 
-.string {
-    color: #CE9178;
+.editor-frame:hover {
+    transform: translateY(-5px);
 }
 
-.indent.indent {
-    padding-left: 40px;
+.code-generation .suggestion-box {
+    border-left: 3px solid #4F46E5;
+}
+
+.pair-programming .suggestion-box {
+    border-left: 3px solid #10B981;
+}
+
+.code-review .suggestion-box {
+    border-left: 3px solid #EF4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.suggestion-box.warning {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.comment {
+    color: #6B7280;
+}
+
+.class-name {
+    color: #4EC9B0;
+}
+
+.type {
+    color: #569CD6;
 }
 
 .editor-titlebar {
@@ -844,13 +870,12 @@ main {
 
 @media (max-width: 1200px) {
     .editor-grid {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
     }
-}
 
-@media (max-width: 768px) {
-    .editor-grid {
-        grid-template-columns: 1fr;
+    .editor-frame {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
