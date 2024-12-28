@@ -38,19 +38,36 @@
                 </div>
             </div>
             <div class="hero-image">
-                <div class="demo-container">
-                    <div class="code-preview">
-                        <div class="code-lines">
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
-                            <div class="code-line"></div>
+                <div class="editor-frame">
+                    <div class="editor-titlebar">
+                        <div class="editor-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
-                        <div class="suggestions">
-                            <div class="suggestion"></div>
-                            <div class="suggestion"></div>
-                            <div class="suggestion"></div>
+                        <div class="editor-title">main.js</div>
+                    </div>
+                    <div class="editor-content">
+                        <div class="line-numbers">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line"><span class="keyword">async</span> <span class="function">function</span> <span class="function-name">generateCode</span>() {</div>
+                            <div class="code-line indent">const response = <span class="keyword">await</span> ai.suggest();</div>
+                            <div class="code-line indent"><span class="keyword">return</span> response.code;</div>
+                            <div class="code-line">}</div>
+                            <div class="code-line cursor"></div>
+                        </div>
+                    </div>
+                    <div class="suggestion-box">
+                        <div class="suggestion-icon">💡</div>
+                        <div class="suggestion-content">
+                            <div class="suggestion-title">AI Suggestion</div>
+                            <div class="suggestion-text">Add error handling and input validation</div>
                         </div>
                     </div>
                 </div>
