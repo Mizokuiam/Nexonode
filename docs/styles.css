@@ -627,22 +627,20 @@ main {
 .integrations {
     padding: 80px 20px;
     text-align: center;
-    background: #0F172A;
+    background: transparent;
 }
 
 .integrations h2 {
     margin-bottom: 60px;
     font-size: 2.5em;
-    background: linear-gradient(45deg, #4F46E5, #7C3AED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #E2E8F0;
 }
 
 .integration-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 80px;
     max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -653,23 +651,17 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    padding: 20px;
-    transition: transform 0.3s ease;
-}
-
-.integration-logo:hover {
-    transform: translateY(-5px);
 }
 
 .integration-logo img {
-    height: 60px;
+    height: 40px;
     object-fit: contain;
-    filter: grayscale(100%) brightness(0.8);
-    transition: filter 0.3s ease;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
 }
 
 .integration-logo:hover img {
-    filter: grayscale(0%) brightness(1);
+    opacity: 1;
 }
 
 .integration-logo span {
@@ -680,11 +672,11 @@ main {
 
 @media (max-width: 768px) {
     .integration-grid {
-        gap: 30px;
+        gap: 40px;
     }
 
     .integration-logo img {
-        height: 50px;
+        height: 35px;
     }
 }
 
