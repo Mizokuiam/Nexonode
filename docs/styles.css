@@ -341,13 +341,15 @@ main {
 
 /* Pricing Section */
 .pricing-section {
-    padding: 80px 0;
+    padding: 60px 0;
     text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .pricing-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.2em;
+    margin-bottom: 15px;
     background: linear-gradient(45deg, #4F46E5, #7C3AED);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -355,83 +357,106 @@ main {
 
 .pricing-section p {
     color: #94A3B8;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .pricing-cards {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .pricing-card {
     background: rgba(17, 24, 39, 0.7);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 30px;
-    width: 300px;
+    border-radius: 12px;
+    padding: 25px;
+    width: 280px;
     backdrop-filter: blur(10px);
     transition: transform 0.2s ease;
 }
 
+.pricing-card.premium {
+    background: linear-gradient(180deg, rgba(79, 70, 229, 0.1) 0%, rgba(17, 24, 39, 0.7) 100%);
+    border: 1px solid rgba(79, 70, 229, 0.3);
+}
+
 .pricing-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 .pricing-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    font-size: 1.3em;
+    margin-bottom: 12px;
     color: #fff;
 }
 
 .pricing-card .price {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 15px 0;
     color: #fff;
 }
 
 .pricing-card .features {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
+    margin: 15px 0;
     text-align: left;
 }
 
 .pricing-card .features li {
-    margin: 10px 0;
+    margin: 8px 0;
     color: #94A3B8;
     display: flex;
     align-items: center;
+    font-size: 0.95em;
 }
 
 .pricing-card .features li:before {
     content: "✓";
     color: #4F46E5;
-    margin-right: 10px;
+    margin-right: 8px;
     font-weight: bold;
 }
 
 .pricing-card .cta-button {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 24px;
     background: linear-gradient(45deg, #4F46E5, #7C3AED);
     color: white;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     border: none;
     cursor: pointer;
     width: 100%;
+    font-size: 0.95em;
+    margin-top: 15px;
 }
 
 .pricing-card .cta-button:hover {
     background: linear-gradient(45deg, #7C3AED, #4F46E5);
     transform: translateY(-2px);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    color: #94A3B8;
+    font-size: 1.5em;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #4F46E5;
 }
 
 /* Integrations Section */
