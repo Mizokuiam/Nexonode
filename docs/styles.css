@@ -625,13 +625,13 @@ main {
 
 /* Integrations Section */
 .integrations {
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
 }
 
 .integrations h2 {
-    margin-bottom: 60px;
-    font-size: 2.5em;
+    margin-bottom: 80px;
+    font-size: 3em;
     background: linear-gradient(45deg, #4F46E5, #7C3AED);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -641,16 +641,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 100px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .integration-logo {
     display: flex;
     align-items: center;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
 }
 
 .integration-logo:hover {
@@ -658,18 +657,46 @@ main {
 }
 
 .integration-logo img {
-    height: 35px;
+    height: 28px;
     width: auto;
     object-fit: contain;
 }
 
+.claude-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.claude-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.claude-text {
+    color: #E2E8F0;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
 @media (max-width: 768px) {
     .integration-grid {
-        gap: 40px;
+        gap: 50px;
+        flex-wrap: wrap;
     }
 
     .integration-logo img {
-        height: 30px;
+        height: 24px;
+    }
+
+    .claude-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .claude-text {
+        font-size: 20px;
     }
 }
 
