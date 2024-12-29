@@ -627,21 +627,23 @@ main {
 .integrations {
     padding: 120px 20px;
     text-align: center;
+    background: #030712;
 }
 
 .integrations h2 {
     margin-bottom: 80px;
-    font-size: 3em;
+    font-size: 3.5em;
     background: linear-gradient(45deg, #4F46E5, #7C3AED);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 600;
 }
 
 .integration-grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 120px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -649,54 +651,39 @@ main {
 .integration-logo {
     display: flex;
     align-items: center;
-    transition: opacity 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .integration-logo:hover {
-    opacity: 0.8;
-}
-
-.integration-logo img {
-    height: 35px;
-    width: auto;
-    object-fit: contain;
-}
-
-.claude-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.claude-icon {
-    height: 32px;
-    width: 32px;
+    transform: translateY(-2px);
 }
 
 .company-name {
-    color: #E2E8F0;
-    font-size: 32px;
-    font-weight: 500;
+    color: #A5B4FC;
+    font-size: 38px;
+    font-weight: 600;
     letter-spacing: -0.5px;
+    transition: color 0.3s ease;
+}
+
+.integration-logo:hover .company-name {
+    color: #818CF8;
+    text-shadow: 0 0 20px rgba(129, 140, 248, 0.3);
 }
 
 @media (max-width: 768px) {
+    .integrations h2 {
+        font-size: 2.8em;
+        margin-bottom: 60px;
+    }
+
     .integration-grid {
         gap: 50px;
         flex-wrap: wrap;
     }
 
-    .integration-logo img {
-        height: 28px;
-    }
-
-    .claude-icon {
-        height: 26px;
-        width: 26px;
-    }
-
     .company-name {
-        font-size: 26px;
+        font-size: 30px;
     }
 }
 
