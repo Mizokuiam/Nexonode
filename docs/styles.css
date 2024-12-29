@@ -627,7 +627,6 @@ main {
 .integrations {
     padding: 120px 20px;
     text-align: center;
-    background: #030712;
 }
 
 .integrations h2 {
@@ -643,24 +642,34 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 120px;
+    gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .integration-logo {
     display: flex;
     align-items: center;
+    justify-content: center;
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 16px;
+    padding: 30px 40px;
+    min-width: 240px;
     transition: all 0.3s ease;
 }
 
 .integration-logo:hover {
     transform: translateY(-2px);
+    background: rgba(99, 102, 241, 0.08);
+    border-color: rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 24px rgba(99, 102, 241, 0.1);
 }
 
 .company-name {
     color: #A5B4FC;
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: -0.5px;
     transition: color 0.3s ease;
@@ -678,12 +687,16 @@ main {
     }
 
     .integration-grid {
-        gap: 50px;
-        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .integration-logo {
+        padding: 24px 32px;
+        min-width: 200px;
     }
 
     .company-name {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
