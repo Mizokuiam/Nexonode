@@ -39,7 +39,7 @@ Nexonode Premium is an advanced Visual Studio Code extension that transforms you
   - Premium support
 
 ### Price
-$29.99 (one-time purchase)
+$9.99 (one-time purchase)
 
 ## Product Type
 Digital Product (VS Code Extension)
