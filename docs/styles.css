@@ -673,7 +673,7 @@ main {
     width: 32px;
 }
 
-.claude-text {
+.company-name {
     color: #E2E8F0;
     font-size: 32px;
     font-weight: 500;
@@ -695,7 +695,7 @@ main {
         width: 26px;
     }
 
-    .claude-text {
+    .company-name {
         font-size: 26px;
     }
 }
