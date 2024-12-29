@@ -657,7 +657,7 @@ main {
 }
 
 .integration-logo img {
-    height: 28px;
+    height: 35px;
     width: auto;
     object-fit: contain;
 }
@@ -665,17 +665,17 @@ main {
 .claude-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .claude-icon {
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
 }
 
 .claude-text {
     color: #E2E8F0;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 500;
     letter-spacing: -0.5px;
 }
@@ -687,16 +687,16 @@ main {
     }
 
     .integration-logo img {
-        height: 24px;
+        height: 28px;
     }
 
     .claude-icon {
-        height: 20px;
-        width: 20px;
+        height: 26px;
+        width: 26px;
     }
 
     .claude-text {
-        font-size: 20px;
+        font-size: 26px;
     }
 }
 
