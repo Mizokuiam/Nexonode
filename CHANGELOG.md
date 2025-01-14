@@ -2,6 +2,14 @@
 
 All notable changes to the "Nexonode" extension will be documented in this file.
 
+
+## [2025-01-14]
+- Update price to $9.99 across all assets
+- Add premium packaging scripts and documentation
+- Add Gumroad product listing structure and content
+- Remove unused demo images
+- Clean up unused files and scripts
+
 ## [0.1.0] - 2024-12-28
 
 ### Added
