@@ -2,6 +2,7 @@
 
 ## 2025-01-15
 
+- Update CHANGELOG.md (2f2e501 by Mizokuiam)
 - Update CHANGELOG.md (14902ad by Mizokuiam)
 
 ## 2025-01-14
